@@ -1,0 +1,14 @@
+
+{% extends 'basic.html' %}
+
+{% block content %}
+
+<h1> Title: {{result.Title}} </h1>
+<p>Year: {{result.Year}}</p>
+<p>Director: {{result.Director}}<p>
+<p>Actors: {{result.Actors}}<p>
+<h2>Ratings</h2>
+<p>IMDB: {{result.Ratings.0.Value}}
+<p>Rotten Tomatoes: {{result.Ratings.1.Value}}
+<p>Metacritic: {{result.Ratings.2.Value}}
+{% endblock %}

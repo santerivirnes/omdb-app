@@ -1,0 +1,14 @@
+{% extends 'basic.html' %}
+
+{% block content %}
+
+<h1>Input name</h1>
+<form action="search" method="POST">
+    {% csrf_token %}
+
+    Enter name for search: <input type="text" name="name"><br>
+    <input type="submit">
+</form>
+
+
+{% endblock %}
